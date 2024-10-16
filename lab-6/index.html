@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab 6 - Holy Grail Layout with JavaScript</title>
+    <link rel="stylesheet" href="style.css"> <!-- Link your CSS file here -->
+</head>
+<body>
+
+    <header>
+        <!-- <div class="header-content"> -->
+          <!-- <img -->
+            <!-- src="imagespace.jpg" -->
+            <!-- alt="Header Image" -->
+            <!-- class="headerImg"/> -->
+        <!-- </div> -->
+      </header>
+
+    <nav>
+        <!-- Sidebar/Menu -->
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="content">
+            <h1>Sorting the numbers</h1>
+    <p>Enter numbers separated by commas:</p>
+    <input type="text" id="inputNumbers">
+    <button onclick="sortNumbers()">Sort</button>
+    <div id="output"></div>
+        </section>
+
+       <!-- <section id="content"> -->
+            <!-- <h1>Background Colour Changer</h1> -->
+            <!-- <button id="changeColorButton">Change Background Color</button>  -->
+        <!-- </section>* -->
+
+    </main>
+    <script src="script.js"></script>
+
+    <aside>
+        <section>
+        <h3>Advertisement 1</h3>
+        <div class="advertisement">
+            <a href="https://www.flipkart.com/" target="_blank">
+                <img src="Flipkart.jpeg" alt="Advertisement 1">
+            </a>
+        </div>
+        </section>
+        <h3>Advertisement 2 </h3>
+        <div class="advertisement">
+            <a href="https://www.flipkart.com/motorola-edge-50-pro-5g-125w-charger-caneel-bay-256-gb/p/itm1603f674e2178?pid=MOBH2YWHMKHAFHZF&lid=LSTMOBH2YWHMKHAFHZFUTQD0D&marketplace=FLIPKART&q=motorola+mobiles+5g&store=tyy%2F4io&srno=s_1_2&otracker=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&otracker1=AS_QueryStore_OrganicAutoSuggest_1_4_na_na_na&fm=organic&iid=en_TI-lVvXnx0gW6WUnafYKrfjROHMHUrxEutPdEXFT0Da9Pi2puB25mdmIMSIl6jvQ288CMaJxCWkrYUb5G20ceA%3D%3D&ppt=hp&ppn=homepage&ssid=4b1bbg40kg0000001729039103340&qH=5c919b614c657cb4"_blank">
+                <img src="Mobile.jpeg" alt="Advertisement 2">
+            </a>
+        </div>
+    </aside>
+    <!-- Inside the content section of your HTML -->
+<!-- Inside the main section of your HTML -->
+
+    <footer>
+        <p>Last updated: 
+            <span id="lastModified"></span>
+        </p>
+    </p>
+    <p>
+        <strong>Addendum:</strong>JavaScript is used to implement two features on this website. In the first feature, a list of numbers is sorted ascendingly, based on the number entered by the user. This is accomplished by navigating to the input area, splitting the input numbers into an array, sorting the array using 'sort()', and displaying the sorted numbers. Second, a background color changer lets users choose a random color for the page's background. By using a function to generate a random color and setting the background color accordingly, we can accomplish this.
+
+        In the implementation process, a challenge was ensuring that the numbers entered by the user were properly parsed and sorted. To handle this, we used the parseInt() function to convert the input strings into integers and edit the whitespace at the beginning and end of the strings. In addition to ensuring cross-browser compatibility, we needed to ensure that the background color would be dynamically changed. We resolved this issue by setting the background color for the body element with the document.body.style.backgroundColor property.
+
+    </p>
+    </footer>
+    <script src="script.js"></script><!-- Link your JavaScript file here -->
+    <script type="text/javascript">
+         var x = document.lastModified;
+         document.getElementById('lastModified').textContent = x;
+    </script>
+</body>
+</html>
 
