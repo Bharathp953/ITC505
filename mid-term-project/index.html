@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <title>Ancient Run Adventure</title>
+</head>
+<body>
+    <header>
+        <h1>Ancient Run Adventure</h1>
+    </header>
+    <main>
+        <div id="story-text">Welcome to the Ancient Run Adventure!</div>
+        <div id="choices">
+            <button id="choice-btn">Choose</button>
+        </div>
+        <div id="image-section">
+            <img id="story-image" src="Temple_Run.jpg" alt="Ancient Run Image">
+        </div>
+        <button id="restart-btn" onclick="startGame()">Restart</button>
+    </main>
+    <section id="addendum">
+        <h2>Addendum</h2>
+        <p>
+            I created Ancient Run Adventure with the intention of immersing players in an enthralling and dynamic experience. A meticulous outline of story stages, choices that shape the narrative, and human interactions were all incorporated to increase the adventure's depth and intrigue."
+        </p>
+        <p>
+            In order to create the Ancient Run Adventure, we handpicked imagery, meticulously crafted the storyline, and refined the user interface. We carefully considered every step and choice to provide a compelling storyline that engenders both deep immersion and captivates players."
+        </p>
+        <p>
+            There were some challenges, especially in balancing branching storylines and maintaining smooth transitions between stages. We tested the JavaScript logic iteratively and honed it to ensure that players had a seamless experience."
+        </p>
+        <p>
+            Through this process, we learned the importance of establishing a cohesive narrative while giving players agency. It is crucial to properly plan for the dynamic 'Choose Your Own Adventure' genre so the user experience is truly satisfying."
+        </p>
+        <footer>
+            <p>Last updated: 
+                <span id="lastModified"></span>
+            </p>
+        </p>
+        </footer>
+        <script src="script.js"></script><!-- Link your JavaScript file here -->
+        <script type="text/javascript">
+             var x = document.lastModified;
+             document.getElementById('lastModified').textContent = x;
+        </script>
+    </body>
+    </html>
+    </section>
+</body>
+</html>
